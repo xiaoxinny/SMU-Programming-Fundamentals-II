@@ -1,15 +1,18 @@
 public class BubbleTeaTest {
 
     public static void displayHasPearlsTest(BubbleTea cup) {
-
+        String result = (cup.hasPearls()) ? cup.getBrand() + " has pearls in it." : cup.getBrand() + " has pearls no in it.";
+        System.out.println(result);
     }
 
     public static void displaySweetnessTest(BubbleTea cup) {
-
+        String result = (cup.isTooSweet()) ? cup.getBrand() + " is too sweet." : cup.getBrand() + " is low in sugar.";
+        System.out.println(result);
     }
 
     public static void displaySweetnessComparison(BubbleTea cup1, BubbleTea cup2) {
-
+        String result = (cup1.isSweeterThan(cup2)) ? cup1.getBrand() + " is sweeter than " + cup2.getBrand() : cup2.getBrand() + " is sweeter than " + cup1.getBrand();
+        System.out.println(result);
     }
 
 

@@ -1,7 +1,7 @@
 public class RadioActiveTest {
 
     public static double calculateMass(double initialMass, double rateOfDecay, int years) {
-        return 0.0;
+        return Math.round(initialMass * Math.pow(1 - rateOfDecay / 100, years) * 1000.0) / 1000.0;
     }
 
     public static void main(String[] args) {
