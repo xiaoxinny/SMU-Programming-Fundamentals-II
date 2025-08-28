@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Q6PartD {
@@ -37,7 +38,25 @@ public class Q6PartD {
      * */
     public static double getPercentageOfLeasedPlotsWithCrop(CommunityGarden garden, char category) {
         // insert your code here.
-        return 0.0;
+        ArrayList<Plot> plots = new ArrayList<Plot>();
+        ArrayList<Plot> leasedPlots = new ArrayList<Plot>();
+        ArrayList<Plot> plotsWithCategory = new ArrayList<Plot>();
+        
+        
+        for (int i=1; i<=garden.getTotalPlots();i++) {
+            plots.add(garden.getPlot(i));
+        }
+        
+        for (Plot p: plots) {
+            if (p.getFarmer()!=null){
+                leasedPlots.add(p);
+                if (p.getCrop() != null && p.getCrop().getCategory() == category) {
+                    plotsWithCategory.add(p);
+                }
+            }
+        }
+
+        return ((plotsWithCategory.size()*100)/leasedPlots.size());
        
     }
 }
