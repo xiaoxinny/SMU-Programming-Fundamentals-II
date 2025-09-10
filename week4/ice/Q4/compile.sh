@@ -1,0 +1,1 @@
+javac -cp "ben_code:download:my_compiled" -d my_compiled -sourcepath my_code my_code/smu/bidding/App.java

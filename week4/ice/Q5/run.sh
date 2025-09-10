@@ -1,0 +1,1 @@
+java -cp "lib/*:classes" source.demo.Tester

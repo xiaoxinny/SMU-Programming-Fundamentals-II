@@ -1,11 +1,12 @@
 import java.util.*;
 
 public class Utility {
-    public static void doSomething(List<Animal> aList) {
+    public static void doSomething(List<? extends Animal> aList) {
         for (Animal a : aList) {
             a.saySomething();
         }
-        //aList.add(new Dog("pussy")); 
+        // This is a specification problem, as ? extends casts it to unknown, whereareas the below specifies a type of object to be added.
+        aList.add(new Dog("pussy")); 
     }
 
     public static void main(String[] args) {

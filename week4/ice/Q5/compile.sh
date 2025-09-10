@@ -1,0 +1,1 @@
+javac -cp "lib/*:classes" -sourcepath source -d classes source/demo/util/*.java source/demo/Tester.java

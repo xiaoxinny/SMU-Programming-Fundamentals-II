@@ -4,8 +4,7 @@ import smu.dm.*;
 import smu.object.*;
 
 public class App {
-  
-  
+
   public static void main(String[] args) {
     StudentManager sm =  new StudentManager();
     Student s = new Student();

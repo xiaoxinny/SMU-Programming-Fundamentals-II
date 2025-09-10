@@ -1,4 +1,4 @@
-
+package source.demo.util;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -13,7 +13,8 @@ public class Emailer {
 
 
         Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.smu.edu.sg");
+        // props.put("mail.smtp.host", "smtp.smu.edu.sg");
+        props.put("mail.smtp.host", "smtp.gmail.com");
 
         Session session = Session.getInstance(props);
 

@@ -1,3 +1,7 @@
+package farming.app;
+
+import farming.AnimalFarm;
+
 /**
  * Created by yeowleong on 4/5/16.
  */
