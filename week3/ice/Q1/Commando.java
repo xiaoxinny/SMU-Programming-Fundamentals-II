@@ -13,6 +13,6 @@ public class Commando extends Soldier {
     }
 
     public String toString() {
-        return "";
+        return String.format("Commando{Soldier=%s, vocationAllowance=%.2f}", super.toString(), vocationAllowance);
     }
 }

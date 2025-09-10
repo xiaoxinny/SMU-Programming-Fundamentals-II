@@ -22,6 +22,6 @@ public class Soldier {
     }
 
     public String toString() {
-        return "";
+        return String.format("Soldier{name='%s', baseAllowance=%.2f}", name, baseAllowance);
     }
 }

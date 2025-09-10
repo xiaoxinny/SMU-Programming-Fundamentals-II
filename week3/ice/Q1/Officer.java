@@ -29,6 +29,6 @@ public class Officer extends Soldier {
     }
 
     public String toString() {
-        return "";
+        return String.format("Officer{Soldier=%s, rank='%s'}", super.toString(), rank);
     }
 }
