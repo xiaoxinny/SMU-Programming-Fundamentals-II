@@ -1,0 +1,3 @@
+interface TaxableProduct {
+    double computeTax();
+}

@@ -2,6 +2,11 @@ import java.util.*;
 public class ProductReportCreator{
 	
 	// Implement the method here
+	public static void createReport(ArrayList<ElectronicProduct> products) {
+		for(ElectronicProduct product: products) {
+			System.out.println(product.toString());
+		}
+	}
 
 	public static void main(String[] args) {
 		ElectronicProduct p1 = new Laptop("T1001","Fujitsu",2007,2500.0,"Windows",2.40,6,true);

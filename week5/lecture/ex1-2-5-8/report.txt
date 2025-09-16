@@ -1,0 +1,5 @@
+Laptop[Computer[Name=T1001,Company=Fujitsu,ManufacturedYear=2007,Price=2500.0,OperatingSystem=Windows,CpuSpeed=2.4],BatteryLife=6,Tablet=true]
+Computer[Name=T1003,Company=IBM,ManufacturedYear=2008,Price=2000.0,OperatingSystem=Windows,CpuSpeed=2.4]
+Computer[Name=T1004,Company=IBM,ManufacturedYear=2000,Price=1500.0,OperatingSystem=Windows,CpuSpeed=1.4]
+Printer[Name=T1005,Company=Epson,ManufacturedYear=2009,Price=1000.0,PrintingSpeed=50,FaxEnabled=true,ScannerIncluded=true]
+DigitalCamera[Name=T1006,Company=Samsung,ManufacturedYear=2008,Price=500.0,DigitalZoom=10,OpticalZoom=10,Resolution=5]
