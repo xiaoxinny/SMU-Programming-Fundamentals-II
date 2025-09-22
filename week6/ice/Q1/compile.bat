@@ -1,0 +1,1 @@
+javac -cp "classes;lib/*" -d classes -sourcepath src src/businessobject/Product.java src/app/TemplatingEngine.java
