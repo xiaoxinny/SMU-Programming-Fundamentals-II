@@ -2,6 +2,6 @@ package app.exceptions;
 
 public class InvalidAmountException extends Exception {
     public InvalidAmountException() {
-        super("Invalid amount entered");
+        super("Invalid amount entered.");
     }
 }

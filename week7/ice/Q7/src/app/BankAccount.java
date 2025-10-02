@@ -16,7 +16,7 @@ public class BankAccount {
         return this.balance;
     }
 
-    public void deposit(double amount) {
+    public void deposit(double amount) throws InvalidAmountException {
         if (amount <= 0) {
             throw new InvalidAmountException();
         } else {
@@ -24,7 +24,7 @@ public class BankAccount {
         }
     }
 
-    public void withdraw(double amount) {
+    public void withdraw(double amount) throws InvalidAmountException, InsufficientFundsException{
         if (amount <= 0) {
             throw new InvalidAmountException();
         } else if (amount > balance) {
