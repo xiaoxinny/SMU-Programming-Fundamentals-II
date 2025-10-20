@@ -44,7 +44,7 @@ public class CheckScoreMenu {
         String quizName = cSScanner.nextLine();
         try {
             double difference = ctrl.calculateDifferenceFromAverage(name, quizName);
-            if (difference >0) {
+            if (difference > 0) {
                 System.out.println(String.format("%s is %.1f marks above the average.", name, difference));
             } else if (difference == 0) {
                 System.out.println(String.format("%s is sitting on the fence!", name));

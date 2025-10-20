@@ -1,4 +1,6 @@
+
 public class SearchCtrl {
+
     private InterestGroupDAO IGDM;
 
     public SearchCtrl() {
@@ -7,6 +9,10 @@ public class SearchCtrl {
 
     public Student searchPresident(String IGName, int year) {
         InterestGroup IG = IGDM.retrieve(IGName);
-        return IG.retrievePresidentInYear(year);
+        if (IG != null) {
+            return IG.retrievePresidentInYear(year);
+        } else {
+            return null;
+        }
     }
 }

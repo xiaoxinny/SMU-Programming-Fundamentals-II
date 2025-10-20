@@ -1,4 +1,5 @@
 
+import java.time.Year;
 import java.util.Scanner;
 
 public class SearchMenu {
@@ -24,7 +25,12 @@ public class SearchMenu {
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    searchPresident();
+                    Scanner sPScanner = new Scanner(System.in);
+                    System.out.print("Enter the Interest Groups's name> ");
+                    String IGName = sPScanner.nextLine();
+                    System.out.print("Enter the year> ");
+                    int year = sPScanner.nextInt();
+                    searchPresident(IGName, year);
                     break;
                 case 2:
                     System.out.println("bye bye");
@@ -34,13 +40,7 @@ public class SearchMenu {
             }
         } while (choice != 2);
     }
-
-    public void searchPresident() {
-        Scanner sPScanner = new Scanner(System.in);
-        System.out.print("Enter the Interest Groups's name> ");
-        String IGName = sPScanner.nextLine();
-        System.out.print("Enter the year> ");
-        int year = sPScanner.nextInt();
+    public void searchPresident(String IGName, int year) {
         try {
             Student president = ctrl.searchPresident(IGName, year);
             String presName = president.getName();
