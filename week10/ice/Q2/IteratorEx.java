@@ -26,6 +26,12 @@ public class IteratorEx {
     }
 
     private static void removeMatches (List<String> aFlavours, String toMatch){
-        // TODO: Insert code here
+        Iterator<String> flavoursIter = aFlavours.iterator();
+        while (flavoursIter.hasNext()) {
+            String currentFlavour = flavoursIter.next();
+            if (currentFlavour.equals(toMatch)) {
+                flavoursIter.remove();
+            }
+        }
     }
 }

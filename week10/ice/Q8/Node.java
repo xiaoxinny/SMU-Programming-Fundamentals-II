@@ -4,6 +4,7 @@ public class Node {
 
     private int value;   // this stores the value
     private Node next; // this stores the reference to the next node  
+    private Node previous;
 
     public Node(int value) {
         this.value = value;
@@ -17,11 +18,19 @@ public class Node {
         return next;
     }
 
+    public Node getPrevious() {
+        return previous;
+    }
+
     public void setValue(int value) {
         this.value = value;
     }
 
     public void setNext(Node next) {
         this.next = next;
+    }
+
+    public void setPrevious(Node previous) {
+        this.previous = previous;
     }
 }

@@ -9,5 +9,15 @@ public class PortalController {
 
 
     // Write your answer below.
-
+    public boolean transfer(String fromAccNum, String toAccNum, int amount) {
+        Account fromAcc = bank.retrieveAccount(fromAccNum);
+        Account toAcc = bank.retrieveAccount(toAccNum);
+        double fromAccBalance = fromAcc.getBalance();
+        if (fromAccBalance > amount) {
+            fromAcc.deduct(amount);
+            toAcc.add(amount);
+            return true;
+        }
+        return false;
+    }
 }
